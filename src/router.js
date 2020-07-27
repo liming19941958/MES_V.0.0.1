@@ -56,9 +56,6 @@ import PostProcessDailyReportPage from './components/ProductionReport/PostProces
 import MachineProductionStatusPage from './components/ProductionReport/MachineProductionStatus'
 import WorkOrderQualificationRatePage from './components/ProductionReport/WorkOrderQualificationRate'
 import TestBrowsPanelPage from './components/BrowsePanelPreview/TestBrowsPanel'
-
-
-
 //创建路由对象
 var router = new VueRouter({
     routes:[
@@ -67,7 +64,7 @@ var router = new VueRouter({
         {path:'/HomeContainer',component:HomeContainer,
             children:[
                 {path:'/HomeContainer',component:HomePage},
-                {path:'/RoleManagementPage',component:RoleManagementPage},
+                {path:'/HomeContainer/RoleManagementPage',component:RoleManagementPage},
                 {path:'/UserManagementPage',component:UserManagementPage},
                 {path:'/LogQueryPage',component:LogQueryPage},
                 {path:'/ExceptionLogPage',component:ExceptionLogPage},

@@ -32,7 +32,7 @@
                             <span slot="title">系统设置</span>
                         </template>
                         <el-menu-item-group>
-                            <router-link to="/RoleManagementPage">
+                            <router-link to="/HomeContainer/RoleManagementPage">
                                 <el-menu-item index="1-1">角色管理</el-menu-item>
                             </router-link>
                             <router-link to="/UserManagementPage">
@@ -309,12 +309,12 @@
                 </el-menu>
                 </el-scrollbar>
 
-                <h3 v-show="appName">
+                <h2 v-show="appName">
                     <div class="AppName">
                         <p>系统版本：0.0.1</p>
                         <p>版权所有：物联微电子有限公司</p>
                     </div>
-                </h3>
+                </h2>
             </div>
 <!--        主内容区-->
             <div class="main-contain-box" :class="{'main-contain-box-active':sideBarClass}">
@@ -543,13 +543,17 @@
                 font-weight: bold;
                 }
             .AppName{
-                position: fixed;
+                /*width: 100%;*/
+                position: absolute;
+                left: 5px;
+                /*position: fixed;*/
                 bottom: 10px;
+
                 p{
                     font-weight: normal;
                     color: #ffffff;
-                    font-size: 10px;
                     text-align: left;
+                    font-size: 10px;
                     padding:0px 5px 0px 10px;
                 }
 
